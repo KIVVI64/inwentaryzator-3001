@@ -1,5 +1,6 @@
 {
   "name": "inwentaryzator-3001",
+  "description": "Inwentaryzator 3001 - Inventory Management System",
   "private": true,
   "version": "0.0.0",
   "type": "module",

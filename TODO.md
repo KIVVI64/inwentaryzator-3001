@@ -18,15 +18,15 @@
 | -------- | ------------------------------------------- | -------- | --------- | ------------ |
 | TYPE-001 | Define Device/Asset TypeScript interface   | High     | Done      | None         |
 | TYPE-002 | Define API request/response types           | High     | Ready     | None         |
-| TYPE-003 | Create asset status enum (Active, Inactive, Retired, In Repair) | High | Ready | None |
-| CONST-001 | Create constants file (defaults, limits, status labels) | High | Ready | None |
+| TYPE-003 | Create asset status enum (Active, Inactive, Retired, In Repair) | High | Done | None |
+| CONST-001 | Create constants file (defaults, limits, status labels) | High | Done | None |
 
 #### Task Group: Mock Data Generation
 
 | ID       | Task                                        | Priority | Status    | Dependencies |
 | -------- | ------------------------------------------- | -------- | --------- | ------------ |
-| MOCK-001 | Create mock device data generator (100+ sample assets) | High | Ready | TYPE-001, TYPE-003 |
-| MOCK-002 | Add realistic asset attributes (serial, location, user, purchase date) | High | Ready | MOCK-001 |
+| MOCK-001 | Create mock device data generator (100+ sample assets) | High | Done | TYPE-001, TYPE-003 |
+| MOCK-002 | Add realistic asset attributes (serial, location, user, purchase date) | High | Done | MOCK-001 |
 | MOCK-003 | Create mock data export/loader utility    | High | Ready | MOCK-001 |
 
 #### Task Group: Asset List Component

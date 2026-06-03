@@ -3,7 +3,8 @@
  * Creates realistic sample IT assets for development and testing
  */
 
-import { Device, DeviceStatus, DeviceType } from '../types';
+import type { Device } from '../types';
+import { DeviceStatus, DeviceType } from '../types';
 import { COMMON_MANUFACTURERS, COMMON_LOCATIONS } from './constants';
 
 /**

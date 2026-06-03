@@ -4,26 +4,30 @@
  */
 
 /**
- * Device status enum - represents the current state of an IT asset
+ * Device status values - represents the current state of an IT asset
  */
-export enum DeviceStatus {
-  ACTIVE = 'active',
-  INACTIVE = 'inactive',
-  RETIRED = 'retired',
-  IN_REPAIR = 'in_repair',
-}
+export const DeviceStatus = {
+  ACTIVE: 'active',
+  INACTIVE: 'inactive',
+  RETIRED: 'retired',
+  IN_REPAIR: 'in_repair',
+} as const;
+
+export type DeviceStatus = (typeof DeviceStatus)[keyof typeof DeviceStatus];
 
 /**
- * Device type enum - categorizes IT assets
+ * Device type values - categorizes IT assets
  */
-export enum DeviceType {
-  LAPTOP = 'laptop',
-  DESKTOP = 'desktop',
-  PRINTER = 'printer',
-  MONITOR = 'monitor',
-  NETWORK_DEVICE = 'network_device',
-  OTHER = 'other',
-}
+export const DeviceType = {
+  LAPTOP: 'laptop',
+  DESKTOP: 'desktop',
+  PRINTER: 'printer',
+  MONITOR: 'monitor',
+  NETWORK_DEVICE: 'network_device',
+  OTHER: 'other',
+} as const;
+
+export type DeviceType = (typeof DeviceType)[keyof typeof DeviceType];
 
 /**
  * Core Device/Asset interface
